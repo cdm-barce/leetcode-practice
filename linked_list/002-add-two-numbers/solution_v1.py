@@ -18,7 +18,6 @@ class Solution:
                             l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()          # 哑节点：假头，方便统一拼接结果
         cur = dummy                 # cur 负责往后接新节点
-        print(cur)
         carry = 0                   # 进位
 
         while l1 or l2 or carry:    # 任一链表没走完、或还有进位，就继续
