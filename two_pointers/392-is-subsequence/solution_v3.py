@@ -13,7 +13,7 @@ class Solution:
         # 遍历 t 时按下标从小到大 append，所以每个列表天然有序（这是能二分的前提）
         pos_map = {}
         for i, ch in enumerate(t):
-            pos_map.setdefault(ch, []).append(i)
+            pos_map.setdefault(ch, []).append(i)                       
 
         # ---- 查询：维护 pos = 上一笔匹配到的 t 下标（初始 -1 表示还没匹配任何字符）----
         pos = -1
